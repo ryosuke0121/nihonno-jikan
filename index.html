@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>にほんのじかん</title>
-  <link rel="icon" href="favicon.ico">
-  <style>
-    .clock {
-      position: absolute;
-      font-size: 50px;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ2RJ4TWMS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <title>にほんのじかん</title>
+    <link rel="icon" href="favicon.ico" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+      .clock {
+        font-family: "Caveat", cursive;
+        position: absolute;
+        font-size: 73px;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QQ2RJ4TWMS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-QQ2RJ4TWMS');
-</script>
-</head>
-<body>
-  <div class="clock" id="clock"></div>
-  <script src="script.js"></script>
-</body>
+      gtag("config", "G-QQ2RJ4TWMS");
+    </script>
+  </head>
+  <body>
+    <div class="clock" id="clock"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
